@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: rgb(31, 31, 31);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Poppins, sans-serif;
+}
+
+.link {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  text-decoration: none;
+  color: white;
+}
+.taskContainer {
+  color: black;
+  background-color: #fff;
+  padding: 40px 100px 30px 60px;
+  border-radius: 10px;
+}
+
+.taskContainer h1 {
+  margin-bottom: 20px;
+}
+
+.taskContainer input {
+  border: none;
+  background-color: #eeeded;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 50px;
+  margin-bottom: 30px;
+  outline: none;
+}
+.taskContainer button {
+  background-color: #fec22a;
+  padding: 20px 40px 20px 40px;
+  border: none;
+  font-size: 18px;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.taskContainer button:hover {
+  background-color: #ffcd50;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  padding: 0px 0px 0px 35px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li::before {
+  content: "";
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(img/unchecked.png);
+  background-position: center;
+  background-size: cover;
+}
+
+ul li.checked::before {
+  content: "";
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(img/Checked.png);
+  background-position: center;
+  background-size: cover;
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover {
+  background: #edeef0;
+}
