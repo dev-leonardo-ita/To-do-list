@@ -26,8 +26,9 @@ body {
 .taskContainer {
   color: black;
   background-color: #fff;
-  padding: 40px 100px 30px 60px;
+  padding: 70px 70px 70px 60px;
   border-radius: 10px;
+  position: relative;
 }
 
 .taskContainer h1 {
@@ -110,4 +111,14 @@ ul li span {
 
 ul li span:hover {
   background: #edeef0;
+}
+
+.errorBox {
+  background-color: #ff8e8e7e;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 15px;
+  position: absolute;
+  top: 13px;
+  display: none;
 }
